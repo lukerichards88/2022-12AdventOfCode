@@ -1,5 +1,3 @@
-#import pprint
-import json
 tallestStack = 0
 numberOfStacks = 0
 boxStacks = []
