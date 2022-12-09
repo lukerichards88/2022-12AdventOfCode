@@ -1,3 +1,4 @@
+import timeit
 def euclideanDistance(*args):
     """ n = len(args)
     Function finds ED of 2 points in n-Dimensional Space
@@ -115,6 +116,5 @@ def main():
         visited = len(F.visited)
         F = F.F
     print(visited)
-
 if __name__ == "__main__":
     main()
