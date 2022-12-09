@@ -1,12 +1,12 @@
 def euclideanDistance(*args):
-    # n = len(args)
-    # Function finds ED of 2 points in n-Dimensional Space
-    # Point0 = (arg[0] for arg in args)
-    # Point1 = (arg[1] for arg in args)
-    # Each arg should be a 2-Tuple
-    # Each tuple is a pair of values on the same dimension
-    # Function iterates over every dimension and finds the
-    # distance between the two points.
+    """ n = len(args)
+    Function finds ED of 2 points in n-Dimensional Space
+    Point0 = (arg[0] for arg in args)
+    Point1 = (arg[1] for arg in args)
+    Each arg should be a 2-Tuple
+    Each tuple is a pair of values on the same dimension
+    Function iterates over every dimension and finds the
+    distance between the two points."""
     total = 0
     for arg in args:
         a, b = arg
