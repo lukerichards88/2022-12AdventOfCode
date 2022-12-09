@@ -97,21 +97,24 @@ vectors = {     # Give U, D, L, R as unit vectors
     'L': (-1, 0),
     'R': (1, 0)
 }
+def main():
+    H = Knot(hasFollower=9)     # Initialise H with 9 followers
+    # filename = "Day9Test.txt"
+    filename = "Day9Input.txt"
+    with open(filename) as file:
+        for line in file:
+            direction, distance = [line.split()[0], int(line.split()[1])]
+            for m in range(distance):
+                H.move(vectors[direction])
+    F = H.F
+    visited = F.visited
+    print("Task 1")
+    print(len(visited))
+    print("Task 2")
+    for x in range(9):
+        visited = len(F.visited)
+        F = F.F
+    print(visited)
 
-H = Knot(hasFollower=9)     # Initialise H with 9 followers
-# filename = "Day9Test.txt"
-filename = "Day9Input.txt"
-with open(filename) as file:
-    for line in file:
-        direction, distance = [line.split()[0], int(line.split()[1])]
-        for m in range(distance):
-            H.move(vectors[direction])
-F = H.F
-visited = F.visited
-print("Task 1")
-print(len(visited))
-print("Task 2")
-for x in range(9):
-    visited = len(F.visited)
-    F = F.F
-print(visited)
+if __name__ == "__main__":
+    main()
