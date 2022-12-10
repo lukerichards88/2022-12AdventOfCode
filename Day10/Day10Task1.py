@@ -66,13 +66,9 @@ class Manager:
 
 
 with open(filename) as file:
-    line = file.readline()
-    linecounter = 0
     Manager = Manager()
-    while line != '':
+    for line in file:
         Manager.receiveInstruction(line)
-        line = file.readline()
-        linecounter += 1
 S = Manager.strengths
 print(sum(S))
 
