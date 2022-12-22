@@ -105,7 +105,7 @@ def main():
     system = SystemManager(indexes)
     for cube in cubes:
         system.addCube(*cube, 'lava', CheckForNeighbours(cube, indexes))
-    print(system.breadthSearch())
+    #print(system.breadthSearch())
 
 if __name__ == "__main__":
     from timeit import timeit

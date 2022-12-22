@@ -2032,12 +2032,12 @@ dvzb: wntd - gvsq
 mwjd: wfbt * qwqj
 vlvl: 3
 zsrc: zvmr + ccbw
-root: mcnw + wqdw
+root: mcnw == wqdw
 trzc: 1
 sprf: fcmd * jftd
 ngln: 4
 mgqp: 16
-humn: 3803
+humn: x
 zllm: 2
 czrh: 3
 btvs: gnvq + smht
